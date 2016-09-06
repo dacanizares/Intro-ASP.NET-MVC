@@ -1,0 +1,11 @@
+﻿@model IEnumerable<ProjectDemo.Models.Videojuego>
+
+<div class="list-group">
+    @foreach (var item in Model)
+    {
+        <a data-url="@Url.Content(string.Format("~/Home/MostrarVideojuego/{0}", item.Id))"
+           class="list-group-item">
+            @item.Nombre
+        </a>
+    }
+</div>

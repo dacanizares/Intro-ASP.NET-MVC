@@ -1,0 +1,18 @@
+﻿@model ProjectDemo.Models.Videojuego
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            @Model.Nombre
+        </h3>
+    </div>
+    <div class="panel-body">
+        <h4>Imagen</h4>
+        <img class="img-responsive" src="@Model.ImagenUrl"/>
+        <hr />
+        <h4>Descripción</h4>
+        <p>
+            @Model.Descripcion
+        </p>
+    </div>
+</div>
