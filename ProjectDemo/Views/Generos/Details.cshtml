@@ -1,4 +1,4 @@
-﻿@model ProjectDemo.Models.Videojuego
+﻿@model ProjectDemo.Models.Genero
 
 @{
     ViewBag.Title = "Details";
@@ -7,17 +7,9 @@
 <h2>Details</h2>
 
 <div>
-    <h4>Videojuego</h4>
+    <h4>Genero</h4>
     <hr />
     <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Genero.Nombre)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Genero.Nombre)
-        </dd>
-
         <dt>
             @Html.DisplayNameFor(model => model.Nombre)
         </dt>
@@ -32,14 +24,6 @@
 
         <dd>
             @Html.DisplayFor(model => model.Descripcion)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ImagenUrl)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ImagenUrl)
         </dd>
 
     </dl>

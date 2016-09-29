@@ -21,6 +21,7 @@ namespace ProjectDemo.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<Videojuego> Videojuegos { get; set; }
+        public DbSet<Genero> Generos { get; set; }
 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
