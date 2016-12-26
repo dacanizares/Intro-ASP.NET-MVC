@@ -18,6 +18,7 @@ namespace ProjectDemo.Models
 
         // Definición de la Relación
         public int GeneroId { get; set; }
+
         [ForeignKey("GeneroId")]
         public virtual Genero Genero { get; set; }
     }

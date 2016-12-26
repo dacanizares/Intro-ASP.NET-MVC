@@ -10,6 +10,7 @@ using ProjectDemo.Models;
 
 namespace ProjectDemo.Controllers
 {
+    [Authorize]
     public class GenerosController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
