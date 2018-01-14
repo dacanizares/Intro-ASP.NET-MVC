@@ -31,5 +31,14 @@ namespace ProjectDemo.Controllers
             }
             return PartialView("_MostrarVideojuego", videojuego);
         }
+        
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                db.Dispose();
+            }
+            base.Dispose(disposing);
+        }
     }
 }
